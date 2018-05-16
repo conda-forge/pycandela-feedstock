@@ -1,8 +1,8 @@
 {%set name = "pycandela" %}
-{%set version = "0.3.0" %}
+{%set version = "0.4.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "19cdebc0d0a6a38d46bcbe3ecf6e16700e17a44a4aa96eb470deba8202c69c92" %}
+{%set hash_val = "cbbf19931f762afbcdfa682f09ec43284788a1908e5d3ca3b3b8faaff9185280" %}
 {%set build_num = 0 %}
 
 package:
