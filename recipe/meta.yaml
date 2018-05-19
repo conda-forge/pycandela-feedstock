@@ -1,9 +1,8 @@
-{%set name = "pycandela" %}
-{%set version = "0.4.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "cbbf19931f762afbcdfa682f09ec43284788a1908e5d3ca3b3b8faaff9185280" %}
-{%set build_num = 0 %}
+{% set name = "pycandela" %}
+{% set version = "0.4.0" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "cbbf19931f762afbcdfa682f09ec43284788a1908e5d3ca3b3b8faaff9185280" %}
 
 package:
   name: {{ name|lower }}
@@ -11,16 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
-  script: python setup.py install
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
     - jupyter
     - pandas
 
