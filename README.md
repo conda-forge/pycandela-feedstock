@@ -14,14 +14,15 @@ Summary: Jupyter interface for Candela visualization components
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pycandela-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pycandela-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pycandela-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pycandela-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pycandela-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pycandela-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pycandela-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pycandela-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pycandela/badges/version.svg)](https://anaconda.org/conda-forge/pycandela)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pycandela/badges/downloads.svg)](https://anaconda.org/conda-forge/pycandela)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pycandela-green.svg)](https://anaconda.org/conda-forge/pycandela) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pycandela.svg)](https://anaconda.org/conda-forge/pycandela) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pycandela.svg)](https://anaconda.org/conda-forge/pycandela) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pycandela.svg)](https://anaconda.org/conda-forge/pycandela) |
 
 Installing pycandela
 ====================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
